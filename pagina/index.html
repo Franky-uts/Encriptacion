@@ -6,18 +6,28 @@
     <title>Encriptación</title>
 </head>
 <body>
-    <div>
+    <div style="margin: 50px; padding: 10px; border-color: black; border-radius: 10px; border-width: 10px; background-color: rgba(128, 128, 128, 0.632); justify-content: center; display: flex;">
         <label for="">Texto normal</label>
         <input type="text" placeholder="Texto a encriptar" name="" id="normal">
         <input type="button" value="Encriptar" id="normal_btn">
         <input type="text" placeholder="Texto encriptado" name="" id="normal_encript">
     </div>
-    <div>
+    <div style="margin: 50px; padding: 10px; border-color: black; border-radius: 10px; border-width: 10px; background-color: rgba(128, 128, 128, 0.632); justify-content: center; display: flex;">
         <label for="">Texto encriptado</label>
         <input type="text" placeholder="Texto a desencriptar" name="" id="encriptado">
         <input type="button" value="Desencriptar" id="encryp_btn">
         <input type="text" placeholder="Texto desencriptado" name="" id="encriptado_norm">
     </div>
+    <div id="encriptar_div" style="margin: 50px; padding: 10px; border-color: black; border-radius: 10px; border-width: 10px; background-color: rgba(128, 128, 128, 0.632); justify-content: center; display: flex;">
+        <input type="file" accept=".txt" id="archivo_encrip">Sube el archivo a encriptar</input>
+        <!--label for="" id="nombre_archivo_encrip">Nombre del archivo :)</label-->
+    </div>
+    <button id="descargar_encrip" style="display: flex; justify-self: center; margin: auto;">Descargar</button>
+    <div id="desencriptar_div" style="margin: 50px; padding: 10px; border-color: black; border-radius: 10px; border-width: 10px; background-color: rgba(128, 128, 128, 0.632); justify-content: center; display: flex;">
+        <input type="file" accept=".txt" id="archivo_des">Sube el archivo a desencriptar</input>
+        <!--label for="" id="nombre_archivo_desencrip">Nombre del archivo :)</label-->
+    </div>
+    <button id="descargar_desencrip" style="display: flex; justify-self: center; margin: auto;">Descargar</button>
     <script src="encrypt.js"></script>
 </body>
 </html>
