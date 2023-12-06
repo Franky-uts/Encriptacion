@@ -7,32 +7,32 @@
 </head>
 <body>
     <div style="margin: 50px; padding: 10px; border-color: black; border-radius: 10px; border-width: 10px; background-color: rgba(128, 128, 128, 0.632); justify-content: center; display: flex;">
-        <label for="">Texto normal</label>
-        <input type="text" placeholder="Texto a encriptar" name="" id="normal">
-        <label for="">Clave</label>
-        <input type="text" placeholder="Clave" name="" id="clave">
-        <input type="button" value="Encriptar" id="normal_btn">
-        <input type="text" placeholder="Texto encriptado" name="" id="normal_encript">
+        <label style="margin-left: 15px;" for="">Texto normal</label>
+        <input style="margin-left: 15px;"type="text" placeholder="Texto a encriptar" name="" id="normal">
+        <label style="margin-left: 15px;"for="">Clave</label>
+        <input style="margin-left: 15px;"type="text" placeholder="Clave" name="" id="clave">
+        <input style="margin-left: 15px;"type="button" value="Encriptar" id="normal_btn">
+        <input style="margin-left: 15px;"type="text" placeholder="Texto encriptado" name="" id="normal_encript">
     </div>
     <div style="margin: 50px; padding: 10px; border-color: black; border-radius: 10px; border-width: 10px; background-color: rgba(128, 128, 128, 0.632); justify-content: center; display: flex;">
-        <label for="">Texto encriptado</label>
-        <input type="text" placeholder="Texto a desencriptar" name="" id="encriptado">
-        <label for="">Clave</label>
-        <input type="text" placeholder="Clave" name="" id="clave-des">
-        <input type="button" value="Desencriptar" id="encryp_btn">
-        <input type="text" placeholder="Texto desencriptado" name="" id="encriptado_norm">
+        <label style="margin-left: 15px;"for="">Texto encriptado</label>
+        <input style="margin-left: 15px;"type="text" placeholder="Texto a desencriptar" name="" id="encriptado">
+        <label style="margin-left: 15px;"for="">Clave</label>
+        <input style="margin-left: 15px;"type="text" placeholder="Clave" name="" id="clave-des">
+        <input style="margin-left: 15px;"type="button" value="Desencriptar" id="encryp_btn">
+        <input style="margin-left: 15px;"type="text" placeholder="Texto desencriptado" name="" id="encriptado_norm">
     </div>
     <div id="encriptar_div" style="margin: 50px; padding: 10px; border-color: black; border-radius: 10px; border-width: 10px; background-color: rgba(128, 128, 128, 0.632); justify-content: center; display: flex;">
-        <label for="">Sube el archivo a encriptar</label>
-        <input type="file" accept=".txt" onchange="leerArchivo(this,1)" id="archivo_encrip"></input>
-        <input type="text" placeholder="Clave" name="" id="clave-nor-arch">
+        <label style="margin-left: 15px;"for="">Sube el archivo a encriptar</label>
+        <input style="margin-left: 15px;"type="file" accept=".txt" onchange="leerArchivo(this,1)" id="archivo_encrip"></input>
+        <input style="margin-left: 15px;"type="text" placeholder="Clave" name="" id="clave-nor-arch">
         <!--label for="" id="nombre_archivo_encrip">Nombre del archivo :)</label-->
     </div>
     <button id="descargar_encrip" style="display: flex; justify-self: center; margin: auto;">Descargar</button>
     <div id="desencriptar_div" style="margin: 50px; padding: 10px; border-color: black; border-radius: 10px; border-width: 10px; background-color: rgba(128, 128, 128, 0.632); justify-content: center; display: flex;">
-        <label for="">Sube el archivo a desencriptar</label>
-        <input type="file" accept=".txt" onchange="leerArchivo(this,2)" id="archivo_des"></input>
-        <input type="text" placeholder="Clave" name="" id="clave-des-arch">
+        <label style="margin-left: 15px;"for="">Sube el archivo a desencriptar</label>
+        <input style="margin-left: 15px;"type="file" accept=".txt" onchange="leerArchivo(this,2)" id="archivo_des"></input>
+        <input style="margin-left: 15px;"type="text" placeholder="Clave" name="" id="clave-des-arch">
         <!--label for="" id="nombre_archivo_desencrip">Nombre del archivo :)</label-->
     </div>
     <button id="descargar_desencrip" style="display: flex; justify-self: center; margin: auto;">Descargar</button>
