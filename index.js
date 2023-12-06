@@ -2,22 +2,26 @@ const express = require('express')
 const app = express()
 const cors = require('cors')
 const CryptoJS = require("crypto-js")
-const clave = "Holamundo"
-
+const bodyParser = require('body-parser')
+//const clave = "Holamundo"
 
 app.use(cors())
 
-app.get('/encriptar/:Texto',(req,res)=>{
+app.use(bodyParser.json())
+
+app.post('/encriptar',(req,res)=>{
     const {Texto} = req.params
+    const data = req.body
     res.send({
-        texto:CryptoJS.AES.encrypt(req.params.Texto, clave).toString()
+        texto:CryptoJS.AES.encrypt(data.Texto, data.Clave).toString()
     })
 })
 
-app.get('/descriptar/:Texto',(req,res)=>{
+app.post('/descriptar',(req,res)=>{
     const {Texto} = req.params
+    const data = req.body
     res.send({
-        texto:CryptoJS.AES.decrypt(req.params.Texto, clave).toString(CryptoJS.enc.Utf8)
+        texto:CryptoJS.AES.decrypt(data.Texto, data.Clave).toString(CryptoJS.enc.Utf8)
     })
 })
 
